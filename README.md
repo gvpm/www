@@ -1,1 +1,1 @@
-# Just a repo for my simple website
+Just a repo for my simple website
