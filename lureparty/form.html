@@ -1,45 +1,106 @@
 <html>
 <head>
-    <title></title>
+    <title>LureParty - Deals Form</title>
       <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/business-frontpage.css" rel="stylesheet">
+    <link href="mobile.css" rel="stylesheet">
 </head>
 <body>
-	<h4>Select the Restaurant.</h4>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    <form action="myprocessingscript.php" method="POST">
-    <!-- <input name="field1" type="text" /> -->
-    <select class="selectpicker" name="field1">
-  	<option value="Ask Italian">Ask Italian</option>
-  	<option value="All Bar One">All Bar One</option>
-  	<option Byron="Yahoo">Byron</option>
- 	</select>    
-    <!-- <input name="field2" type="text" /> -->
-    <br/>
- 
- 	<h4>How many people will use the deal?</h4>
+  ga('create', 'UA-83593341-1', 'auto');
+  ga('send', 'pageview');
 
- 	<label class="form-check-inline">
-  	<input class="form-check-input" type="radio" name="field2" id="inlineRadio1" value="1"> 1
-	</label>
-	<label class="form-check-inline">
-  	<input class="form-check-input" type="radio" name="field2" id="inlineRadio2" value="2"> 2
-	</label>
-	<label class="form-check-inline">
-  	<input class="form-check-input" type="radio" name="field2" id="inlineRadio3" value="o3"> 3
-	</label>
-	<label class="form-check-inline">
-  	<input class="form-check-input" type="radio" name="field2" id="inlineRadio4" value="4"> 4
-	</label>
-	<label class="form-check-inline">
-  	<input class="form-check-input" type="radio" name="field2" id="inlineRadio5" value="5"> 5
-	</label>
-	<br/><br/>
+	</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <header>
+        
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                <img class="img-circle img-responsive img-center" src="img/cover2.png" alt="">
 
-    <input type="submit" name="submit" value="Save Data">
-	</form>
-    <a href='/lureparty/data.txt'>Text file</a>
+                </div>
+           
+        </div>
+    </header>
+
+
+<hr>	
+<div class="row" style="text-align: center">
+<div class="col-md-4 col-md-offset-4">
+
+    <form action="codescreen.php" method="POST">
+
+  
+    	
+    		
+              
+            	<h3>1- Select the Restaurant.</h3>
+            	<select class="selectpicker" name="field1">
+  				<option value="Ask Italian">Ask Italian</option>
+  				<option value="All Bar One">All Bar One</option>
+  				<!--<option value="Busaba Eathai">Busaba Eathai</option>-->
+  				<option value="Byron">Byron</option>
+  				<option value="Cabana">Cabana</option>
+  				<option value="Frankie &amp; Benny's ">Frankie &amp; Benny's </option>
+  				<option value="Greenwich Kitchen">Greenwich Kitchen</option>
+  				<option value="Jimmy's">Jimmy's</option>
+  				<option value="Rodizio Rico">Rodizio Rico</option>
+  				<option value="Slug &amp; Lettuce">Slug &amp; Lettuce</option>
+  				<option value="Square Pie">Square Pie</option>
+  				<option value="Starbucks">Starbucks</option>
+  				<option value="TGI Friday's">TGI Friday's</option>
+  				<option value="Wagamama">Wagamama</option>
+  				<option value="Zizzi">Zizzi</option>
+ 				</select>          
+          
+          		<h3>2- How many people will use the deal?</h3>
+
+            
+           		<label class="form-check-inline">
+  				<input class="form-check-input" type="radio" name="field2" id="inlineRadio1" value="1"> 1
+				</label>
+				<label class="form-check-inline">
+  				<input class="form-check-input" type="radio" name="field2" id="inlineRadio2" value="2"> 2
+				</label>
+				<label class="form-check-inline">
+  				<input class="form-check-input" type="radio" name="field2" id="inlineRadio3" value="3"> 3
+				</label>
+				<label class="form-check-inline">
+  				<input class="form-check-input" type="radio" name="field2" id="inlineRadio4" value="4"> 4
+				</label>
+				<label class="form-check-inline">
+  				<input class="form-check-input" type="radio" name="field2" id="inlineRadio5" value="5"> 5
+				</label>    
+          
+
+
+          		<h3>3- Like our page!</h3>
+				<div class="fb-like" data-href="https://www.facebook.com/pokegolureparty/" data-width="300" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+				<br><br>
+				<button type="submit" name="submit" class="btn btn-def ">CLICK FOR CODE SCREEN</button>
+           
+
+</form>
+
+</div>
+</div>
+<hr>
+
+
+   
 </body>
