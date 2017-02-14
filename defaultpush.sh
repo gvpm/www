@@ -1,3 +1,2 @@
-git add .
-git commit -m "default commit"
+git commit -a -m "default".
 git push
