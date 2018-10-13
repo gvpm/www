@@ -1,16 +1,31 @@
-<head>
-    
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gvpm</title>
+    <style> body {padding: 0; margin: 0;} </style>
+    <script src="p5.min.js"></script>
+    <script src="/addons/p5.dom.min.js"></script>
+    <script src="/addons/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+  </head>
 <header>
+    <style type="text/css">
+      .mobileHide { display: inline; }
+    
+      /* Smartphone Portrait and Landscape */
+      @media only screen
+        and (min-device-width : 320px)
+        and (max-device-width : 480px){
+         .mobileHide { display: none;}
+      }
+    </style>
     <h1 style="color: #5e9ca0;"><span style="color: #333333;">Guilherme Magalh&atilde;es</span></h1>
-<body>
-
-    <p>Check my <a href="https://github.com/gvpm">Github</a></p>
-    <p>CV <a href="https://docs.google.com/document/d/13f1QDsAIXUPBnyalrErR0R4BP-nIRcM4SQBxYPAzucQ/edit?usp=sharing">here</a>!<br /></p>
-    <h3 style="color: #2e6c80;"><span style="color: #808080;">Contact:</span></h3>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/guilhermevpm/">@guilhermevpm</a></p>
-    <p>gvillar@id.uff.br</p>
+  <body>
+    <p><div class="mobileHide" id="canvas"></div></p>
+    <p>You can check my GitHub <a href="https://github.com/gvpm">here</a>  and my CV <a href="https://docs.google.com/document/d/13f1QDsAIXUPBnyalrErR0R4BP-nIRcM4SQBxYPAzucQ/edit?usp=sharing">here!</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/guilhermevpm/">@guilhermevpm</a> - E-Mail: gvillar@id.uff.br</p>
     
 <p><br />&nbsp;</p>
 
@@ -24,4 +39,8 @@
   ga('send', 'pageview');
 
 </script>
-</body>
+
+
+ 
+  </body>
+</html>
