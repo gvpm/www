@@ -19,7 +19,14 @@ var scoreSize;
 var pause;
 var instructionsSize;
 
+function preload() {
+	// Ensure the .ttf or .otf font stored in the assets directory
+	// is loaded before setup() and draw() are called
+	font = loadFont('addons/font.otf');
+  }
+
 function setup() {
+	textFont(font);
 	pause=true;
 
 	canvasX=windowWidth*0.6
@@ -38,8 +45,8 @@ function setup() {
 	bar1Score=0
 	bar2Score=0
 
-	scoreSize=canvasX*0.05
-	instructionsSize=canvasX*0.015
+	scoreSize=canvasX*0.055
+	instructionsSize=canvasX*0.019
 
 	iterate()
 }
