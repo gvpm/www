@@ -64,7 +64,7 @@ function startBallPosition(){
 	ballDiameter=canvasAverage*0.04
 	ballRadius=ballDiameter/2
 	ballX=canvasX/2
-	ballY=canvasY/2
+	ballY=Math.floor((Math.random() * (canvasY*0.95)) + ballRadius);
 	ballDirectionX=-1
 	if(Math.random()>0.5)ballDirectionX=1;
 	ballDirectionY=-1
@@ -180,6 +180,15 @@ function keyPressed() {
 	}
 	if (key == 6) {
 		velocity=6
+	}
+	if (key == 7) {
+		velocity=7
+	}
+	if (key == 8) {
+		velocity=8
+	}
+	if (key == 9) {
+		velocity=9
 	}
 
 	if (key == 'r') {
